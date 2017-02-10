@@ -1,0 +1,12 @@
+proudct-list 임
+<table>
+<tr *ngFor='let product of productList'>
+                    <td>productId : {{product.productId}}</td>
+                    <td>productCode : {{product.productCode}}</td>
+                    <td>productName : {{product.productName}}</td>
+                    <td>productDesc : {{product.productDesc}}</td>
+                    <td>regDate : {{product.regDate}}</td>
+                    <td>regUserid : {{product.regUserid}}</td>
+                </tr>
+</table>
+<div><a href="#/product/add">생성</a>

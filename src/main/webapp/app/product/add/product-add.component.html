@@ -1,0 +1,15 @@
+<div class="form login_form">
+	<form id="productForm" [formGroup]="productForm" (ngSubmit)="addProduct($event)">
+    <div class="form-group">
+		<label class="form-control-label visible-ie8 visible-ie9 product_label">productCode</label>
+		<input type="text" class="form-control" placeholder="productCode" formControlName="productCode" id="productCode" name="productCode" required />
+	</div>
+	<div class="form-group">
+		<label class="form-control-label visible-ie8 visible-ie9">productName</label>
+		<input type="text" class="form-control" placeholder="productName" formControlName="productName" id="productName" name="productName" required />
+	</div>
+	<div>
+		<button type="submit" class="btn btn-primary" >생성</button>
+	</div>
+</form>
+</div>
